@@ -1,11 +1,18 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
-app.get('/', (req, res) => {
-  res.send('hehee');
-});
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+// Import router dari folder routes
+const indexRouter = require('./routes/index');
+
+// Gunakan router
+app.use('/', indexRouter);
+
+// Jalankan server
+app.listen(PORT, () => {
+  console.log(`Server berjalan di http://localhost:${PORT}`);
 });
