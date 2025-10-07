@@ -10,5 +10,17 @@
     "judul": "One punch man",
     "author": "Saitama",
     "publikasi": 2013
+  },
+  {
+    "id": 3,
+    "judul": "Kimi No Nawa",
+    "author": "Valentino Huda",
+    "publikasi": 2010
+  },
+  {
+    "id": 4,
+    "judul": "Siksa Kubur",
+    "author": "Rafly Hermanto",
+    "publikasi": 2024
   }
 ]
